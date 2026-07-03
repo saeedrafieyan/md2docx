@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+import fs from "node:fs/promises";import path from "node:path";import {Command} from "commander";import {markdownToDocx} from "./converter.js";
+const app=new Command();app.name("md2docx").description("Convert Markdown to a structured Word document").argument("<input>","Markdown file").option("-o, --output <file>","Output DOCX file").action(async(input,opt)=>{const md=await fs.readFile(input,"utf8"),output=opt.output||path.join(path.dirname(input),path.basename(input,path.extname(input))+".docx");await fs.writeFile(output,await markdownToDocx(md,{title:path.basename(input,path.extname(input))}));console.log("Created "+path.resolve(output));});app.parseAsync().catch(e=>{console.error("Conversion failed: "+e.message);process.exitCode=1;});
