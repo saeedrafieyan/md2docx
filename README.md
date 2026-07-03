@@ -39,9 +39,11 @@
    npm start
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000), paste Markdown or select a Markdown file, and click **Convert to Word**.
+4. Open [http://localhost:3000](http://localhost:3000), paste Markdown or select a Markdown file, then click **Convert to Word** or **Convert to PDF**.
 
 Keep the terminal open while using the browser app. Stop the server with `Ctrl+C`.
+
+PDF export currently requires Windows with Microsoft Word installed. The conversion runs locally through Word's PDF exporter, so Word and PDF outputs share the same formatting and native equations.
 
 ## Command-line usage
 
