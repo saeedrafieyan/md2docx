@@ -1,6 +1,6 @@
 # Quarterly Project Update
 
-This checks **bold text**, *italics*, `inline code`, and a [link](https://example.com).
+This checks **bold text**, _italics_, `inline code`, and a [link](https://example.com).
 
 ## Highlights
 
@@ -16,10 +16,10 @@ This checks **bold text**, *italics*, `inline code`, and a [link](https://exampl
 
 ### Status table
 
-| Area | Owner | Status |
-|:---|:---:|---:|
-| Converter | Alex | Done |
-| Documentation | Sam | In progress |
+| Area          | Owner |      Status |
+| :------------ | :---: | ----------: |
+| Converter     | Alex  |        Done |
+| Documentation |  Sam  | In progress |
 
 ```js
 const message = "Markdown becomes Word";

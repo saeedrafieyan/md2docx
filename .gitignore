@@ -1,6 +1,8 @@
 node_modules/
 tmp/
 .agents/
+dist/
+coverage/
 *.log
 .DS_Store
 Thumbs.db
